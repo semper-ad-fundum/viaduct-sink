@@ -1,0 +1,34 @@
+encoding  utf-8
+language en
+
+source "Viaduct_Sink.th"
+
+export model -o output/viaduct.lox
+export model -format survex -o output/viaduct.3d
+export map -o output/viaduct.kml
+export map -o output/viaduct.xvi
+export map -projection extended -o output/viaduct_ext.xvi
+
+layout normal
+     #scale 1 50
+     #symbol-set AUT
+     doc-author "Paweł Krawczyk"
+     doc-title "Viaduct Sink"
+     statistics explo all
+     statistics topo all
+     statistics carto all
+     statistics copyright all
+     color map-fg 80
+     legend on
+     map-comment "Viaduct Sink"
+     # for debugging
+     #symbol-show point cave-station
+     #symbol-show group cave-centerline
+     #debug station-names
+     #map-header 0 0 off
+     symbol-hide group cave-centerline
+     symbol-hide point cave-station
+endlayout
+
+export map -format pdf -layout normal -o output/viaduct.pdf
+export map -format pdf -layout normal -projection extended -o output/viaduct_ext.pdf
