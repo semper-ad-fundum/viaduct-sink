@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -1763.36 -1900.41 470.75 140.25
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -1763.36 -1900.41 502.0 141.5
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {-1635.36 1 1.0} {-1772.41 0} Viaduct_Sink-1p.xvi 0 {}
 
 # 2020.08.10 created by TopoDroid v. 5.0.5c
@@ -154,9 +154,14 @@ point 203.5 11.0 entrance -orientation 178.4
 
 point 200.5 -82.0 debris
 
-point 163.61 -479.49 label -text "Threshold"
+line arrow
+  31.0 -466.5
+  148.0 -441.0
+endline
 
-point -88.78999999999999 -276.06 label -text "Dismal"
+point -6.389999999999986 -478.49 label -text "The Threshold"
+
+point -88.78999999999999 -276.06 label -text "Dismal Series"
 
 line slope
   305.5 -584.75
@@ -170,7 +175,9 @@ line slope
   l-size 10.0
 endline
 
-point 341.47 -602.46 label -text "Shale end"
+point 371.5 -517.0 label -text "Small Aven"
+
+point 342.47 -663.46 label -text "Shale end"
 
 line wall
   -172.16 -809.4
@@ -217,13 +224,54 @@ line wall
   98.5 -531.5
 endline
 
-point -93.65 -752.27 label -text "Red aven"
+point -81.15 -753.27 label -text "Red Aven"
 
 point -187.25 -834.5 debris
 
 point -183.75 -806.75 debris
 
-point -421.25 -578.25 label -text "Upstream"
+line wall
+endline
+
+line wall -reverse on -subtype "presumed"
+  -210.0 -480.0
+  -210.0 -480.0 -264.47 -486.56 -261.0 -493.5
+endline
+
+point -163.5 -464.5 water-flow -orientation 255.8
+
+point -87.0 -454.5 water-flow -orientation 255.8
+
+line wall -reverse on -subtype "presumed"
+  -277.5 -485.0
+  -277.5 -485.0 -244.0 -461.5 -211.5 -462.5
+endline
+
+line wall
+  -435.72 -545.57
+  -435.72 -545.57 -405.5 -514.0 -395.5 -517.5
+  -385.5 -521.0 -314.0 -534.0 -314.0 -536.5
+  -314.0 -539.0 -309.5 -548.5 -306.0 -550.5
+  -302.5 -552.5 -298.0 -541.5 -298.0 -541.5
+  smooth off
+  -298.0 -541.5 -282.0 -524.5 -284.5 -517.5
+  -287.81 -508.22 -275.0 -511.0 -275.0 -511.0
+  smooth off
+  -275.0 -511.0 -263.72 -494.86 -261.0 -493.5
+endline
+
+line wall -reverse on
+  -451.89 -535.65
+  -451.89 -535.65 -405.5 -493.0 -389.5 -495.5
+  -373.5 -498.0 -322.0 -517.5 -314.0 -520.5
+  -306.0 -523.5 -301.5 -518.0 -301.5 -518.0
+  smooth off
+  -305.0 -510.0
+  -305.0 -510.0 -304.0 -504.5 -297.5 -504.5
+  -291.0 -504.5 -280.5 -487.5 -277.5 -485.0
+endline
+
+point -555.25 -488.75 label -text "Upstream"
 
 point -799.5 -1361.5 debris
 
@@ -238,12 +286,11 @@ line slope -reverse on
   l-size 10.0
 endline
 
-point -304.18 -1080.62 label -text "Downside aven"
+point -304.18 -1080.62 label -text "Downside Aven"
 
-line slope
+line pit
   166.75 -422.5
   195.5 -452.75
-  l-size 10.0
 endline
 
 line slope -reverse on
@@ -334,6 +381,33 @@ line wall
   -617.49 -943.42
   -616.72 -932.74
   -617.2 -918.85
+endline
+
+line wall -subtype "presumed"
+  -617.2 -918.85
+  -617.2 -918.85 -603.0 -919.5 -604.0 -924.5
+endline
+
+point -751.0 -840.0 water-flow -orientation 203.0
+
+point -589.0 -1116.0 water-flow -orientation 211.1
+
+point -585.0 -1031.5 water-flow -orientation 177.3
+
+point -641.0 -1324.0 label -text "Minor inlet"
+
+point -595.0 -945.0 water-flow -orientation 169.2
+
+point -900.0 -1049.0 label -text "Back filled"
+
+point -712.0 -813.5 label -text "Small inlet"
+
+line wall -subtype "presumed"
+  -598.5 -918.0
+  -598.5 -918.0 -604.0 -919.0 -610.75 -912.25
+endline
+
+line wall
   -610.75 -912.25
   -605.11 -904.29
   -598.37 -894.92
@@ -430,7 +504,37 @@ line wall
   -222.8 -933.69
   -216.63 -924.72
   -209.7 -911.71
-  -205.95 -901.95
+endline
+
+point 7.0 -1010.0 label -text "Gas Chamber (back filled)"
+
+point -149.5 -984.5 debris
+
+point -141.5 -958.0 debris
+
+point -142.5 -934.5 debris
+
+point -171.0 -917.0 debris
+
+point -202.0 -904.0 debris
+
+line wall -subtype "presumed"
+  -145.0 -1021.0
+  -145.0 -1021.0 -132.0 -972.0 -130.5 -964.0
+  -129.0 -956.0 -119.5 -924.0 -132.0 -921.0
+  -144.5 -918.0 -174.5 -902.5 -177.0 -902.5
+  -179.5 -902.5 -204.7 -892.57 -204.7 -892.57
+  smooth off
+endline
+
+line wall -subtype "presumed"
+  -209.7 -911.71
+  -209.7 -911.71 -198.5 -912.5 -184.0 -921.0
+  -169.5 -929.5 -145.0 -924.5 -152.5 -957.5
+  -160.0 -990.5 -168.0 -1010.0 -170.5 -1020.0
+endline
+
+line wall
   -204.7 -892.57
   -199.9 -881.93
   -196.77 -871.42
@@ -507,25 +611,7 @@ line wall
   smooth off
 endline
 
-line wall -reverse on -subtype "presumed"
-  -318.75 -394.0
-  -325.5 -401.0
-  -332.5 -408.5
-  -345.0 -423.0
-  -359.0 -438.0
-  -373.5 -458.0
-endline
-
 line wall -reverse on
-  -373.5 -458.0
-  -384.0 -469.5
-  -390.0 -477.25
-  -401.0 -490.5
-  -409.75 -499.0
-  -415.25 -507.0
-  -420.61 -518.36
-  -423.92 -527.68
-  -428.17 -535.48
   -435.72 -545.57
   -441.68 -556.66
   -444.52 -564.93
@@ -703,21 +789,6 @@ line wall -reverse on
   -461.63 -552.83
   -455.96 -543.68
   -451.89 -535.65
-  -446.7 -525.5
-  -438.08 -513.58
-  -434.72 -505.43
-  -433.48 -497.64
-  -430.35 -485.25
-  -413.0 -458.25
-endline
-
-line wall -reverse on -subtype "presumed"
-  -413.5 -459.0
-  -388.75 -426.25
-  -379.0 -417.25
-  -366.75 -409.0
-  -355.75 -399.0
-  -335.25 -383.5
 endline
 
 point -992.87 -836.94 label -text "Somme"
@@ -739,7 +810,7 @@ line wall -subtype "presumed"
   smooth off
 endline
 
-point -809.0 -1236.52 label -text "Tool shed"
+point -850.5 -1236.02 label -text "The Tool Shed"
 
 line slope -reverse on
   -800.0 -774.75
@@ -842,7 +913,24 @@ line wall
   -785.47 -908.1
 endline
 
+point -391.0 -465.5 label -text "Cascade"
+
+point -435.0 -656.5 label -text "Squeeze"
+
+point -245.0 -549.0 label -text "Squeeze"
+
+line pit -reverse on
+  -354.0 -498.0
+  -365.0 -538.0
+endline
+
 point -28.25 -435.0 breakdown-choke
+
+point -158.5 -1029.0 water-flow -orientation 195.3
+
+point -63.5 -942.5 water-flow -orientation 226.5
+
+point 117.0 -809.5 water-flow -orientation 232.3
 
 point 195.5 -700.25 breakdown-choke
 
@@ -865,10 +953,6 @@ point 167.75 -373.75 debris
 point 172.5 -345.25 debris
 
 point 182.93 -413.56 debris
-
-point -449.56 -553.07 water-flow -orientation 204.4
-
-point -380.77 -440.51 water-flow -orientation 216.8
 
 line slope
   -617.5 -1184.25
@@ -1036,7 +1120,7 @@ line wall
   56.0 -313.38
 endline
 
-point -43.0 -402.5 water-flow -orientation 159.8
+point -54.0 -382.0 water-flow -orientation 159.8
 
 point -12.75 -358.75 water-flow -orientation 252.0
 
@@ -1394,7 +1478,16 @@ point -1139.0 -700.5 water-flow -orientation 225.7
 
 point -1115.75 -652.25 water-flow -orientation 187.8
 
-point -875.75 -637.5 label -text "End of dam pipeline"
+point -862.75 -616.0 label -text "End of dam pipeline"
+
+point -770.5 -1341.5 water-flow -orientation 242.6
+
+point -682.5 -1304.0 water-flow -orientation 261.9
+
+line arrow
+  -857.5 -630.0
+  -856.5 -711.0
+endline
 
 line border -id l391--962--661 -reverse on
   -1027.75 -631.0
