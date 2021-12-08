@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -1763.36 -1900.41 502.0 141.5
+##XTHERION## xth_me_area_adjust -1693.0 -1768.0 610.2452000000001 299.02459999999996
 ##XTHERION## xth_me_area_zoom_to 200
-##XTHERION## xth_me_image_insert {-1635.36 1 1.0} {-1772.41 0} Viaduct_Sink-1p.xvi 0 {}
+##XTHERION## xth_me_image_insert {160.99 1 1.0} {-42.365999999999985 0} output/viaduct.xvi 0 {}
 
 # 2020.08.10 created by TopoDroid v. 5.0.5c
 
@@ -236,6 +236,7 @@ endline
 line wall -reverse on -subtype "presumed"
   -210.0 -480.0
   -210.0 -480.0 -264.47 -486.56 -261.0 -493.5
+  smooth off
 endline
 
 point -163.5 -464.5 water-flow -orientation 255.8
@@ -245,6 +246,7 @@ point -87.0 -454.5 water-flow -orientation 255.8
 line wall -reverse on -subtype "presumed"
   -277.5 -485.0
   -277.5 -485.0 -244.0 -461.5 -211.5 -462.5
+  smooth off
 endline
 
 line wall
@@ -258,6 +260,7 @@ line wall
   -287.81 -508.22 -275.0 -511.0 -275.0 -511.0
   smooth off
   -275.0 -511.0 -263.72 -494.86 -261.0 -493.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -269,6 +272,7 @@ line wall -reverse on
   -305.0 -510.0
   -305.0 -510.0 -304.0 -504.5 -297.5 -504.5
   -291.0 -504.5 -280.5 -487.5 -277.5 -485.0
+  smooth off
 endline
 
 point -555.25 -488.75 label -text "Upstream"
@@ -386,6 +390,7 @@ endline
 line wall -subtype "presumed"
   -617.2 -918.85
   -617.2 -918.85 -603.0 -919.5 -604.0 -924.5
+  smooth off
 endline
 
 point -751.0 -840.0 water-flow -orientation 203.0
@@ -405,6 +410,7 @@ point -712.0 -813.5 label -text "Small inlet"
 line wall -subtype "presumed"
   -598.5 -918.0
   -598.5 -918.0 -604.0 -919.0 -610.75 -912.25
+  smooth off
 endline
 
 line wall
@@ -532,6 +538,7 @@ line wall -subtype "presumed"
   -209.7 -911.71 -198.5 -912.5 -184.0 -921.0
   -169.5 -929.5 -145.0 -924.5 -152.5 -957.5
   -160.0 -990.5 -168.0 -1010.0 -170.5 -1020.0
+  smooth off
 endline
 
 line wall
@@ -2455,7 +2462,7 @@ point -389.34 -856.59 station -name "18"
 
 point -464.42 -780.64 station -name "19"
 
-point -485.86 -723.35 station -name "20"
+point -569.33 -749.0559999999999 station -name "20"
 
 point -529.03 -697.45 station -name "21"
 
@@ -2513,15 +2520,15 @@ point 300.92 -529.38 station -name "301"
 
 point 250.05 -643.29 station -name "302"
 
-point -529.03 -697.45 station -name "400"
+point -613.03 -723.856 station -name "400"
 
-point -511.40 -670.85 station -name "401"
+point -595.71 -696.696 station -name "401"
 
-point -500.31 -652.06 station -name "402"
+point -585.08 -678.1859999999999 station -name "402"
 
-point -471.36 -590.08 station -name "403"
+point -557.12 -615.586 station -name "403"
 
-point -364.18 -379.73 station -name "404"
+point -453.97 -403.38599999999997 station -name "404"
 
 point 178.65 -41.45 station -name "1"
 

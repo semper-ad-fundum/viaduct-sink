@@ -6,7 +6,15 @@ source "Viaduct_Sink.th"
 export model -o output/viaduct.lox
 export model -format survex -o output/viaduct.3d
 export map -o output/viaduct.kml
-export map -o output/viaduct.xvi
+
+
+layout warp
+  scale 1 100
+  grid-size 1 1 1  m
+  sketches on
+endlayout
+
+export map -layout warp -o output/viaduct.xvi
 export map -projection extended -o output/viaduct_ext.xvi
 
 layout normal
