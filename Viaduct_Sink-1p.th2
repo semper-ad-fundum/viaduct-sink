@@ -108,7 +108,7 @@ line slope
   l-size 10.0
 endline
 
-point 183.75 -2.0 entrance -orientation 178.4
+point 174.75 14.5 entrance -orientation 178.4
 
 point 200.5 -82.0 debris
 
@@ -117,9 +117,9 @@ line arrow
   148.0 -441.0
 endline
 
-point -6.389999999999986 -478.49 label -text "The Threshold"
+point -6.389999999999986 -478.49 label -text "<size:l>The Threshold"
 
-point -88.78999999999999 -276.06 label -text "Dismal Series"
+point -88.78999999999999 -276.06 label -text "<size:l>Dismal Series"
 
 line slope
   305.5 -584.75
@@ -133,9 +133,9 @@ line slope
   l-size 10.0
 endline
 
-point 371.5 -517.0 label -text "Small Aven"
+point 381.0 -514.0 label -text "<size:l>Small Aven"
 
-point 342.47 -663.46 label -text "Shale end"
+point 342.47 -663.46 label -text "<size:l>Shale end"
 
 line wall
   -172.16 -809.4
@@ -182,7 +182,7 @@ line wall
   98.5 -531.5
 endline
 
-point -81.15 -753.27 label -text "Red Aven"
+point -69.65 -753.77 label -text "<size:l>Red Aven"
 
 point -187.25 -834.5 debris
 
@@ -195,7 +195,7 @@ point -250.5 -383.5 water-flow -orientation 270.7
 
 point -150.5 -404.0 water-flow -orientation 278.8
 
-point -615.75 -484.75 label -text "<size:xl>Upstream"
+point -615.75 -484.75 label -text "<size:l>Upstream"
 
 point -879.0 -1387.0 debris
 
@@ -210,7 +210,7 @@ line slope -reverse on
   l-size 10.0
 endline
 
-point -312.68 -1089.62 label -text "Downside Aven"
+point -319.18 -1117.12 label -text "<size:l>Downside Aven"
 
 line pit
   166.75 -422.5
@@ -365,7 +365,7 @@ line wall
   -209.7 -911.71
 endline
 
-point 7.0 -1010.0 label -text "Gas Chamber (backfilled)"
+point -50.5 -1012.5 label -text "Gas Chamber<br>(backfilled)"
 
 point -149.5 -984.5 debris
 
@@ -568,7 +568,7 @@ line slope -reverse on
   l-size 10.0
 endline
 
-point -1202.87 -870.44 label -text "Somme"
+point -1202.87 -870.44 label -text "<size:l>Somme"
 
 area water
 endarea
@@ -587,7 +587,7 @@ line wall -subtype "presumed"
   smooth off
 endline
 
-point -934.0 -1280.02 label -text "The Tool Shed"
+point -948.0 -1280.02 label -text "<size:l>The Tool Shed"
 
 line slope -reverse on
   -866.5 -801.5
@@ -697,8 +697,8 @@ point -912.97 -1102.41 debris
 point -889.65 -1006.31 debris
 
 line pit -reverse on
-  158.0 -263.0
-  158.0 -263.0 191.25 -269.25 193.0 -276.25
+  153.5 -268.5
+  153.5 -268.5 185.75 -261.0 187.5 -268.0
   smooth off
 endline
 
