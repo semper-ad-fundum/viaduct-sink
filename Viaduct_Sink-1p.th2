@@ -63,6 +63,7 @@ line wall
   207.75 -89.0 203.75 -81.25 202.25 -79.0
   200.75 -76.75 197.25 -61.25 197.5 -59.0
   197.75 -56.75 208.0 -31.75 207.25 -29.75
+  smooth off
 endline
 
 line pit -reverse on
@@ -497,6 +498,7 @@ endline
 line wall -reverse on -subtype "presumed"
   -302.5 -394.0
   -302.5 -394.0 -333.0 -408.0 -329.0 -415.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -508,6 +510,7 @@ line wall -reverse on
   -490.5 -494.0 -515.0 -539.5 -519.5 -550.5
   -524.0 -561.5 -553.0 -617.0 -555.5 -628.0
   -558.0 -639.0 -578.5 -680.0 -578.5 -684.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -525,11 +528,13 @@ line wall -reverse on
   -447.5 -399.5 -387.5 -411.5 -378.0 -415.5
   -368.5 -419.5 -344.5 -412.5 -345.0 -410.0
   -345.5 -407.5 -350.0 -394.5 -344.0 -392.5
+  smooth off
 endline
 
 line wall -reverse on -subtype "presumed"
   -344.0 -392.5
   -338.0 -390.5 -323.0 -378.0 -307.0 -377.5
+  smooth off
 endline
 
 point -690.44 -759.73 label -text "Dam"
@@ -607,8 +612,6 @@ line slope -reverse on
   l-size 11.0
 endline
 
-point -1348.75 -779.0 breakdown-choke
-
 point -488.0 -377.5 label -text "Cascade"
 
 point -516.5 -672.75 label -text "Squeeze"
@@ -680,7 +683,7 @@ line slope
   l-size 10.0
 endline
 
-point -950.89 -1429.92 dig
+point -1368.3899999999999 -783.4200000000001 dig
 
 point -780.75 -918.5 debris
 
@@ -695,6 +698,26 @@ point -897.85 -1156.88 debris
 point -912.97 -1102.41 debris
 
 point -889.65 -1006.31 debris
+
+point -1036.0 -1495.0 water-flow -orientation 232.0
+
+point -961.5 -1437.5 water-flow -orientation 229.3
+
+point -1078.5 -1589.0 label -text "Sump"
+
+area water
+  l356--1154--1528
+endarea
+
+line border -id l356--1154--1528 -close on
+  -1110.0 -1566.0
+  -1110.5 -1545.5
+  -1119.0 -1529.5
+  -1150.5 -1525.5
+  -1162.5 -1545.0
+  -1155.0 -1569.5
+  -1110.0 -1566.0
+endline
 
 line pit -reverse on
   153.5 -268.5
@@ -1019,6 +1042,7 @@ line wall
   -578.5 -754.0
   -578.5 -754.0 -553.5 -807.5 -549.0 -809.5
   -544.5 -811.5 -476.0 -890.5 -472.5 -886.0
+  smooth off
 endline
 
 line wall
@@ -1028,6 +1052,7 @@ line wall
   -623.5 -771.0 -617.5 -746.0 -613.0 -742.5
   -608.5 -739.0 -595.5 -739.5 -592.0 -743.0
   -588.5 -746.5 -583.5 -747.5 -578.5 -754.0
+  smooth off
 endline
 
 line pit -reverse on
@@ -1073,6 +1098,7 @@ line wall
   -696.0 -962.0
   -694.0 -947.5
   -694.0 -947.5 -689.0 -942.0 -683.0 -943.0
+  smooth off
 endline
 
 line wall
@@ -1147,6 +1173,7 @@ line wall
   -878.5 -858.0 -871.5 -866.0 -871.5 -866.0
   smooth off
   -871.5 -866.0 -858.5 -888.0 -858.5 -892.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -1614,6 +1641,7 @@ line wall -reverse on
   -574.0 -725.5 -564.5 -741.5 -562.5 -746.0
   -560.5 -750.5 -542.5 -786.0 -537.0 -795.0
   -531.5 -804.0 -478.0 -873.0 -469.0 -866.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -1913,6 +1941,45 @@ point -453.97 -403.38599999999997 station -name "404"
 point 178.65 -41.45 station -name "1"
 
 point 174.36 -45.92 station -name "0"
+
+line wall
+  -1135.0 -1560.0
+  -1112.5 -1555.5
+  -1091.0 -1545.0
+  -1066.0 -1527.5
+  -1041.5 -1512.5
+  -1025.0 -1499.0
+endline
+
+line wall
+  -1036.0 -1475.5
+  -1068.0 -1501.5
+  -1079.5 -1514.5
+  -1102.0 -1529.5
+  -1125.0 -1537.5
+  -1139.5 -1540.0
+endline
+
+line wall
+  -932.5 -1406.0
+  -974.5 -1427.5
+  -984.0 -1440.0
+  -1000.0 -1449.0
+  -1015.5 -1458.0
+  -1030.0 -1469.5
+  -1036.0 -1475.5
+endline
+
+line wall -reverse on
+  -920.0 -1422.5
+  -945.0 -1440.5
+  -954.0 -1452.5
+  -966.0 -1458.0
+  -984.5 -1472.0
+  -1002.5 -1484.0
+  -1011.5 -1490.0
+  -1025.0 -1499.0
+endline
 
 endscrap
 
